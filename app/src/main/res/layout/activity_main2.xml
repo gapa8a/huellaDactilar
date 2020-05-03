@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity"
+    android:background="@color/colorPrimary">>
+    <include layout="@layout/toolbar" ></include>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/parent"
+            android:layout_width="match_parent"
+            android:layout_height="123dp"
+            android:gravity="center"
+            android:text="¡Bienvenido ha accedido mediante sus datos biométricos!"
+            android:textAlignment="center"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="30dp"
+            android:textStyle="bold"></TextView>
+
+        <ImageView
+            android:layout_marginTop="60dp"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/puerta" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

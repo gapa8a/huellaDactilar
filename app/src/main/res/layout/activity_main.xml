@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary">>
+<LinearLayout
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_gravity="center">
+
+  <TextView
+      style="@style/parent"
+      android:textSize="30dp"
+      android:textStyle="bold"
+      android:textAlignment="center"
+      android:textColor="@color/primaryTextColor"
+      android:layout_width="match_parent"
+      android:layout_marginTop="10dp"
+      android:layout_height="wrap_content"
+      android:text="Bienvenido"
+      android:gravity="center_horizontal"/>
+  <ImageView
+      android:layout_width="200dp"
+      android:layout_height="200dp"
+      android:layout_gravity="center"
+      android:src="@drawable/huella"
+
+      />
+  <TextView
+      style="@style/parent"
+      android:layout_marginTop="50dp"
+      android:textSize="25dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textAlignment="center"
+      android:textColor="@color/primaryTextColor"
+      android:text="A continuación podrá acceder a la siguiente pantalla mediante sus datos biométricos registrados en su smartphone (para utilizar esta opción de acceso)."/>
+
+
+  <Button
+      android:id="@+id/aunte"
+      android:layout_width="64dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="30dp"
+      android:background="@drawable/button"
+      android:enabled="false"
+      android:visibility="invisible"
+      android:drawableStart="@drawable/huella_ico"/>
+
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+    android:textSize="15dp"
+      android:id="@+id/autori"
+      android:gravity="center"
+      android:text="¿Desea utilizar sus datos biométricos para acceder?"/>
+  <LinearLayout
+      android:layout_margin="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="bottom"
+      android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        style="@style/parent"
+        android:textSize="14dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/primaryTextColor"
+        android:text="Esta aplicación fue diseñada por: \n\nLaura Natalia Pulido Chaves,
+Germán Alberto Parra Araque y
+John Freddy Estupiñán Gómez." />
+  </LinearLayout>
+
+
+</LinearLayout>
+
+</RelativeLayout>

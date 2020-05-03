@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#CDDC39</color>
+    <color name="colorPrimaryDark">#AFB42B</color>
+    <color name="colorAccent">#CDDC39</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#212121</color>
+    <color name="loginBkColor">#F0F4C3</color>
+    <color name="black">#000000</color>
+</resources>
